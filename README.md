@@ -8,8 +8,6 @@ The purpose of this end-to-end example is to demonstrate how to prepare, train, 
 3. [Solution Components](#nb0-components)
 4. [Solution Architecture](#nb0-architecture)
 5. [Code Resources](#nb0-code)
-6. [Exploratory Data Science and Operational ML workflows](#nb0-workflows)
-7. [The ML Life Cycle: Detailed View](#nb0-ml-lifecycle)
 
 
 <a id ='business-problem'> </a>
@@ -25,9 +23,6 @@ more precisely we address the use-case: <i> "what is the likelihood that a given
 As you review the notebooks and the [architectures](#nb0-architecture) presented at each stage of the ML life cycle, you will see how you can leverage SageMaker services and features to enhance your effectiveness as a data scientist, as a machine learning engineer, and as an ML Ops Engineer.
 
 We then perform data exploration on the synthetically generated datasets for Customers and Claims.
-
-Then, we provide an overview of the technical solution by examining the [Solution Components](#nb0-components) and the [Solution Architecture](#nb0-architecture).
-We are motivated by the need to accomplish new tasks in ML by examining a [detailed view of the Machine Learning Lifecycle](#nb0-ml-lifecycle), recognizing the [separation of exploratory data science and operationalizing an ML worklfow](#nb0-workflows).
 
 ### Car Insurance Claims: Data Sets and Problem Domain
 
@@ -89,8 +84,6 @@ This is the architecture for model deployment.
 
 ![Pipelines Solution Architecture](images/e2e-5-pipeline-v3b.png)
 
-
-
 <a id ='nb0-code'> </a>
 
 ## Code Resources
@@ -103,8 +96,7 @@ Our solution is split into the following stages of the [ML Lifecycle](#nb0-ml-li
 * [Notebook 2: Data Prep and Store](./1-data-prep-e2e.ipynb): We prepare a dataset for machine learning using SageMaker Data Wrangler, create and deposit the datasets in a SageMaker Feature Store.
 * [Notebook 3: Train, Assess Bias, Establish Lineage, Register Model](./2-lineage-train-assess-bias-tune-registry-e2e.ipynb): We detect possible pre-training and post-training bias, train and tune a XGBoost model using Amazon SageMaker, record Lineage in the Model Registry so we can later deploy it. 
 * [Notebook 4: Mitigate Bias, Re-train, Register, Deploy Unbiased Model](./3-mitigate-bias-train-model2-registry-e2e.ipynb): We mitigate bias, retrain a less biased model, store it in a Model Registry. We then deploy the model to a Amazon SageMaker Hosted Endpoint and run real-time inference via the SageMaker Online Feature Store.
-* [Pipeline Notebook: Create and Run an MLOps Pipeline](./pipeline-e2e.ipynb): We then create a SageMaker Pipeline that ties together everything we have done so far, from outputs from Data Wrangler, Feature Store, Clarify, Model Registry and finally deployment to a SageMaker Hosted Endpoint. [--> Architecture](#nb0-pipeline)
-
+* [Pipeline Notebook: Create and Run an MLOps Pipeline](./pipeline-e2e.ipynb): We then create a SageMaker Pipeline that ties together everything we have done so far, from outputs from Data Wrangler, Feature Store, Clarify, Model Registry and finally deployment to a SageMaker Hosted Endpoint.
 
 
 <a id ='nb0-workflows'> </a>
