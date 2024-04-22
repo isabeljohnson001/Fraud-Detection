@@ -88,7 +88,7 @@ This is the architecture for model deployment.
 
 ### Stages
 
-Our solution is split into the following stages of the [ML Lifecycle](#nb0-ml-lifecycle), and each stage has its own notebook:
+Our solution is split into the following stages of the ML Lifecycle, and each stage has its own notebook:
 
 * [Notebook 1: Data Exploration](./0-AutoClaimFraudDetection.ipynb): We first explore the data.
 * [Notebook 2: Data Prep and Store](./1-data-prep-e2e.ipynb): We prepare a dataset for machine learning using SageMaker Data Wrangler, create and deposit the datasets in a SageMaker Feature Store.
