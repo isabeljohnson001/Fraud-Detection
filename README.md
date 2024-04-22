@@ -61,8 +61,6 @@ The following [SageMaker](https://sagemaker.readthedocs.io/en/stable/v2.html) Se
 
 ## Solution Architecture
 
-The overall architecture is shown in the diagram below.
-1[end to end](./images/ML-Lifecycle-v5.png)
 
 We will go through 5 stages of ML and explore the solution architecture of SageMaker. Each of the sequancial notebooks will dive deep into corresponding ML stage.
 
